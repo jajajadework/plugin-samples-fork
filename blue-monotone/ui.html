@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Monotone Plugin</title>
+</head>
+<body>
+  <h1>Blue Monotone Plugin</h1>
+  <button id="convert-button">Convert to Blue Monotone</button>
+  <script>
+    document.getElementById('convert-button').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'convert-to-blue-monotone' } }, '*');
+    };
+  </script>
+</body>
+</html>
